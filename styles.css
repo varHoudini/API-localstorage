@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #121212;
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.add-product, .show-product {
+    background-color: #333333;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    width: 50%;
+}
+
+.add-product h2 {
+    color: #03a9f4; 
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+#addProductForm {
+    display: flex;
+    flex-direction: column;
+}
+
+#addProductForm input[type="text"],
+#addProductForm input[type="number"],
+#addProductForm textarea {
+    background-color: #555555;
+    color: #ffffff;
+    border: 1px solid #03a9f4;
+    border-radius: 8px;
+    padding: 8px;
+    margin-bottom: 10px;
+}
+
+#addProductForm button[type="submit"] {
+    background-color: #03a9f4;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 16px;
+    cursor: pointer;
+    transition: .5s ease-in-out;
+}
+
+#addProductForm button[type="submit"]:hover {
+    background-color: #0288d1; 
+}
+
+.show-product {
+    width: 50%;
+}
+
+.show-product .header-show {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.show-product .header-show input[type="search"] {
+    background-color: #555555;
+    color: #ffffff;
+    border: 1px solid #03a9f4;
+    border-radius: 8px;
+    padding: 8px;
+    margin-bottom: 10px;
+    width: 50%;
+}
+
+.show-product h2 {
+    color: #03a9f4;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    border-bottom: 1px solid #555555;
+    color: #ffffff;
+}
+
+th {
+    background-color: #333333;
+    text-align: left;
+}
+
+tr:nth-child(even) {
+    background-color: #555555;
+}
+
+tr:nth-child(odd) {
+    background-color: #444444;
+}
+
+td button {
+    background-color: #f44336; 
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    padding: 2px 8px;
+    cursor: pointer;
+}
